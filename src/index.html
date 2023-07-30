@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    <div class="wrapper" id="home">
+      @@include('html/header.html')
+      <div data-observ></div>
+      @@include('html/slider.html')
+
+      <main class="page">
+
+        <div class="page__container">
+          @@include('html/about.html')
+          @@include('html/advantages.html')
+          @@include('html/application.html')
+          @@include('html/application-two.html')
+          @@include('html/portfolio.html')
+        </div>
+
+        @@include('html/gallery.html')
+        <div class="page__container">
+          @@include('html/calc.html')
+          @@include('html/order.html')
+          @@include('html/contacts.html')
+        </div>
+      </main>
+      @@include('html/footer.html')
+    </div>
+
+    @@include('html/popup.html')
+    @@include('html/script.html')
+  </body>
+</html>

@@ -1,0 +1,126 @@
+.slider {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    &__list {}
+
+    &__item {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    &__block {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: calc($index * 4);
+        padding-right: calc($index * 4);
+
+        span {
+            color: $whiteColor;
+            font-size: 18px;
+            margin-top: calc($index * 7);
+            z-index: 2;
+            text-shadow: 1px 1px 1px $blackColor;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    &__title {
+        font-size: 78px;
+        font-size: calc($index * 2.7);
+        color: $whiteColor;
+        line-height: 78px;
+        line-height: calc($index * 2.7);
+        z-index: 2;
+        text-shadow: 1px 1px 1px $blackColor;
+
+        @media screen and (max-width: 767px) {
+            font-size: 44px;
+            line-height: 44px;
+        }
+    }
+
+    &__moto {
+        font-size: 48px;
+        font-size: calc($index * 1.67);
+        color: $whiteColor;
+        line-height: 48px;
+        line-height: calc($index * 1.67);
+        margin-top: $index;
+        margin-bottom: calc($index * 2);
+        width: 100%;
+        max-width: 550px;
+        z-index: 2;
+        text-shadow: 1px 1px 1px $blackColor;
+    }
+
+    &__btn {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 50px;
+        border: 1px solid #DCDCDC;
+        background: rgba(255, 255, 255, 0.30);
+        height: 55px;
+        font-size: 18px;
+        color: $whiteColor;
+        transition: all .3s ease;
+        z-index: 2;
+
+        @media screen and (max-width: 991px) {
+            max-width: 220px;
+            font-size: 14px;
+            height: 50px;
+        }
+
+        &:hover {
+            background: $blackColor;
+            border: 1px solid $blackColor;
+            transition: all .3s ease;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        margin-top: calc($index / 2);
+        z-index: 2;
+
+        a {
+            font-size: 28px;
+            font-size: calc($index * .97);
+            color: $whiteColor;
+            font-weight: bold;
+            transition: all .3s ease;
+            text-shadow: 1px 1px 1px $blackColor;
+
+            @media screen and (max-width: 991px) {
+                font-size: 22px;
+            }
+
+            &:hover {
+                transition: all .3s ease;
+                color: $blackColor;
+            }
+
+            &+a {
+                margin-left: calc($index / 2);
+            }
+        }
+    }
+}

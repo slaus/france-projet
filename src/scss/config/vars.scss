@@ -1,0 +1,42 @@
+$maxWidth: 1920; // максимальная ширина страницы
+$minWidth: 320; // минимальная ширина телефона
+$maxWidthContainer: 1440; // ширина контейнера с учетом padding слева и справа
+$containerWidth: 1400; // ширина контейнера из макета
+
+$mainOffset: 15; // отступы безопасности для контейнера
+$mainFont: 'Gotham Pro Regular', sans-serif; // !указать здесь основное семейство шрифта
+$boldFont: 'Gotham Pro Black', sans-serif; // !указать здесь основное семейство шрифта
+$mainWeight: 400; // !указать здесь основное начертание шрифта
+
+$headerHeight: 100;
+$footerHeight: 100;
+
+$mainRadius: rem(10);
+
+$whiteColor: #FFF;
+$blackColor: #1C1C1C;
+$grayColor: #9C9C9C;
+$redColor: #FF4040;
+$blueColor: #5384E3;
+
+$index: calc(1vw + 1vh);
+$gap: calc($index * 1.2);
+
+$firstAccentColor: $blackColor;
+$secondAccentColor: $redColor;
+
+$fontFamily: $mainFont, sans-serif; // Семейство шрифта по умолчанию
+$fontFamilyBold: $boldFont, sans-serif; // Семейство шрифта по умолчанию
+$fontColor: $blackColor; // Цвет шрифта по умолчанию
+$fontSize: 18; // Размер шрифта по умолчанию
+$fontWeight: $mainWeight; // Жирность шрифта по умолчанию
+
+$standartTrans: all 280ms ease-in-out 0ms;
+
+$btnBoxShadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+
+$lightBoxShadow: 0 0 2px 0 rgba(#000, 10%), 0 0 4px 0 rgba(#000, 10%),
+  0 0 8px 0 rgba(#000, 10%);
+
+$hoverBoxShadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%),
+  0 0 15px 0 rgba(#000, 10%);

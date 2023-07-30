@@ -1,0 +1,124 @@
+.order {
+    margin-top: calc($index * 3);
+    margin-bottom: calc($index * 3);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: $gap;
+
+    @media screen and (max-width: 991px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @media screen and (max-width: 1199px) {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    &__image {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+
+        &-img {
+            height: 100%;
+            max-height: 600px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__text {
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        font-size: calc($index * 1.7);
+        line-height: calc($index * 1.7);
+        
+        @media screen and (max-width: 767px) {
+            font-size: calc($index * 2.4);
+            line-height: calc($index * 2.4);
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: calc($index / 2);
+        font-family: $fontFamily;
+        font-weight: bold;
+        font-size: 28px;
+        font-size: calc($index * 1.1);
+        line-height: 35px;
+        line-height: calc($index * 1.35);
+    }
+
+    &__block {}
+
+    &__form {
+        &-block {
+            margin-top: calc($index * 1.5);
+        }
+    }
+
+    &__label {
+        display: block;
+        font-size: 18px;
+    }
+
+    &__input {
+        font-size: 20px;
+        border: none;
+        width: 100%;
+        padding: 15px 0;
+        position: relative;
+        height: 52px;
+        border-bottom: 1px solid #B9B9B9;
+        transition: all .3s ease;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+
+        &:focus {
+            border-bottom: 1px solid $blueColor;
+            transition: all .3s ease;
+        }
+    }
+
+    &__submit {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background: $blackColor;
+        color: $whiteColor;
+        width: 100%;
+        max-width: 300px;
+        font-size: 18px;
+        line-height: 55px;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-top: calc($index * 1.5);
+        transition: all .3s ease;
+
+        @media screen and (max-width: 991px) {
+            font-size: 14px;
+            max-width: 220px;
+            height: 50px;
+        }
+
+        &:hover {
+            background: $blueColor;
+            transition: all .3s ease;
+        }
+    }
+}
