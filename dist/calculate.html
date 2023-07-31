@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Calculate</title>
+</head>
+  <body>
+    <div class="wrapper" id="home">
+      <header class="header" id="header">
+  <div class="header__top">
+    <div class="header__container">
+      <a href="#home" class="menu__link logo header__logo">
+        <img src="images/logo-header.svg" alt="Logo">
+      </a>
+      <nav class="menu header__menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
+          <li class="menu__item"><a href="#advantages" class="menu__link">Our advantages</a></li>
+          <li class="menu__item"><a href="#portfolio" class="menu__link">Our portfolio</a></li>
+          <li class="menu__item"><a href="#calc" class="menu__link">Renovation project</a></li>
+          <li class="menu__item"><a href="#application" class="menu__link">Application</a></li>
+          <li class="menu__item"><a href="#order" class="menu__link">Your order</a></li>
+          <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+        </ul>
+        <ul class="menu__list social">
+          <li class="menu__item"><a href="#" class="menu__link">Ru</a></li>
+          <li class="menu__item"><a href="#" class="menu__link active">En</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Fr</a></li>
+        </ul>
+      </nav>
+      <button class="header__burger icon-menu">
+  <span></span>
+</button>
+    </div>
+  </div>
+</header>
+      <div data-observ></div>
+
+      <main class="page">
+        <div class="page__container">
+          <section class="calculate">
+    <h1 class="calculate__title">Calculate your renovation</h1>
+    <div class="form-container">
+        <div class="timeline">
+            <div class="timeline-item active">1<span>Step</span></div>
+            <div class="empty timeline-item">2<span>Step</span></div>
+            <div class="empty timeline-item">3<span>Step</span></div>
+            <div class="empty timeline-item">4<span>Step</span></div>
+            <div class="empty timeline-item">5<span>Step</span></div>
+            <div class="empty timeline-item">6<span>Step</span></div>
+        </div>
+        <div class="form-steps">
+
+            <div class="step current">
+                <h2 class="timeline__title">The purpose of your appeal</h2>
+                <div class="radio-button-group">
+                    <input type="radio" id="step11" name="step1" value="option1">
+                    <label for="step11" class="radio-label">
+                        <span>Find out the cost</span>
+                        <img src="images/step11.jpg" alt="Option 1" class="radio-image">
+                    </label>
+
+                    <input type="radio" id="step12" name="step1" value="option2">
+                    <label for="step12" class="radio-label">
+                        <span>Сompare prices</span>
+                        <img src="images/step12.jpg" alt="Option 2" class="radio-image">
+                    </label>
+
+                    <input type="radio" id="step13" name="step1" value="option3">
+                    <label for="step13" class="radio-label">
+                        <span>Find a master</span>
+                        <img src="images/step13.jpg" alt="Option 3" class="radio-image">
+                    </label>
+                </div>
+                <div class="step__buttons">
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="empty step">
+                <h2 class="timeline__title">Your property for renovation</h2>
+                <div class="radio-button-group">
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="step21" name="step2" value="option1">
+                            <label for="step21" class="radio-label">
+                                <span>House</span>
+                                <img src="images/step21.jpg" alt="Option 1" class="radio-image">
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="step23" class="input-label">
+                                <span>Total area</span>
+                                <input type="text" id="step23" name="step2" value="" placeholder="0 m2">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="step22" name="step2" value="option2">
+                            <label for="step22" class="radio-label">
+                                <span>Apartments</span>
+                                <img src="images/step22.jpg" alt="Option 2" class="radio-image">
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="step24" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="step24" name="step2" value="" placeholder="0 rooms">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="empty step">
+                <h2 class="timeline__title">Outputs of planned works</h2>
+                <div class="radio-button-group">
+                    <input type="radio" id="step31" name="step3" value="option1">
+                    <label for="step31" class="radio-label">
+                        <span>Construction works</span>
+                        <img src="images/step31.jpg" alt="Option 1" class="radio-image">
+                    </label>
+
+                    <input type="radio" id="step32" name="step3" value="option2">
+                    <label for="step32" class="radio-label">
+                        <span>Internal work</span>
+                        <img src="images/step32.jpg" alt="Option 2" class="radio-image">
+                    </label>
+                </div>
+                <h3>Internal work</h3>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="checkbox1" name="checkbox1">
+                    <label for="checkbox1" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict31.jpg" alt="Main Image 1" class="main-image">
+                        <span>Plaster</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox2" name="checkbox2">
+                    <label for="checkbox2" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict32.jpg" alt="Main Image 2" class="main-image">
+                        <span>Plaster</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox3" name="checkbox3">
+                    <label for="checkbox3" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict33.jpg" alt="Main Image 3" class="main-image">
+                        <span>Plaster</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox4" name="checkbox4">
+                    <label for="checkbox4" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict34.jpg" alt="Main Image 4" class="main-image">
+                        <span>Floor tiles</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox5" name="checkbox5">
+                    <label for="checkbox5" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict35.jpg" alt="Main Image 5" class="main-image">
+                        <span>Floor tiles</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox6" name="checkbox6">
+                    <label for="checkbox6" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict36.jpg" alt="Main Image 6" class="main-image">
+                        <span>Floor tiles</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox7" name="checkbox7">
+                    <label for="checkbox7" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict37.jpg" alt="Main Image 7" class="main-image">
+                        <span>Floor coverings</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox8" name="checkbox8">
+                    <label for="checkbox8" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict38.jpg" alt="Main Image 8" class="main-image">
+                        <span>Floor coverings</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox9" name="checkbox9">
+                    <label for="checkbox9" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict39.jpg" alt="Main Image 9" class="main-image">
+                        <span>Plumbing</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox10" name="checkbox10">
+                    <label for="checkbox10" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict40.jpg" alt="Main Image 10" class="main-image">
+                        <span>Plumbing</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox11" name="checkbox11">
+                    <label for="checkbox11" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict41.jpg" alt="Main Image 11" class="main-image">
+                        <span>Floor coverings</span>
+                    </label>
+
+                    <input type="checkbox" id="checkbox12" name="checkbox12">
+                    <label for="checkbox12" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                        <img src="images/pict42.jpg" alt="Main Image 12" class="main-image">
+                        <span>Plumbing</span>
+                    </label>
+                </div>
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="empty step">
+                <h2 class="timeline__title">Choose your rooms</h2>
+                <div class="radio-button-group">
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="step41" name="step4" value="option1">
+                            <label for="step41" class="radio-label">
+                                <span>Kitchen</span>
+                                <img src="images/step41.jpg" alt="Option 1" class="radio-image">
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="step46" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="step46" name="step4" value="" placeholder="0 rooms">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="step42" name="step4" value="option2">
+                            <label for="step42" class="radio-label">
+                                <span>Bathroom</span>
+                                <img src="images/step42.jpg" alt="Option 2" class="radio-image">
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="step47" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="step47" name="step4" value="" placeholder="0 rooms">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="step43" name="step4" value="option2">
+                            <label for="step43" class="radio-label">
+                                <span>Livingroom</span>
+                                <img src="images/step43.jpg" alt="Option 3" class="radio-image">
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="step48" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="step48" name="step4" value="" placeholder="0 rooms">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="step44" name="step4" value="option2">
+                            <label for="step44" class="radio-label">
+                                <span>Bedroom</span>
+                                <img src="images/step44.jpg" alt="Option 4" class="radio-image">
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="step49" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="step49" name="step4" value="" placeholder="0 rooms">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="step45" name="step4" value="option2">
+                            <label for="step45" class="radio-label">
+                                <span>Other</span>
+                                <img src="images/step45.jpg" alt="Option 5" class="radio-image">
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="step50" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="step50" name="step4" value="" placeholder="0 rooms">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="empty step">
+                <h2 class="timeline__title">Your renovation</h2>
+                <input type="text" name="payment" placeholder="Enter your payment details">
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="empty step">
+                <h2 class="timeline__title">Your contact details</h2>
+                <input type="text" name="confirm" placeholder="Confirm your order">
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+        </div>
+      </main>
+      <footer class="footer">
+  <div class="footer__container">
+    <nav class="menu footer__menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
+        <li class="menu__item"><a href="#advantages" class="menu__link">Our advantages</a></li>
+        <li class="menu__item"><a href="#portfolio" class="menu__link">Our portfolio</a></li>
+        <li class="menu__item"><a href="#calc" class="menu__link">Renovation project</a></li>
+        <li class="menu__item"><a href="#application" class="menu__link">Application</a></li>
+        <li class="menu__item"><a href="#order" class="menu__link">Your order</a></li>
+        <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+      </ul>
+    </nav>
+    <a href="#home" class="menu__link logo footer__logo">
+      <img src="images/logo-footer.svg" alt="Logo">
+    </a>
+  </div>
+</footer>
+    </div>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
