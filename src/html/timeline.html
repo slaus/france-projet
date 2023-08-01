@@ -1,0 +1,406 @@
+<section class="calculate">
+    <h1 class="calculate__title">Calculate your renovation</h1>
+    <div class="form-container">
+        <div class="timeline">
+            <div class="timeline-item active">1<span>Step</span></div>
+            <div class="timeline-item empty">2<span>Step</span></div>
+            <div class="timeline-item empty">3<span>Step</span></div>
+            <div class="timeline-item empty">4<span>Step</span></div>
+            <div class="timeline-item empty">5<span>Step</span></div>
+            <div class="timeline-item empty">6<span>Step</span></div>
+        </div>
+        <div class="form-steps">
+
+            <div class="step current">
+                <h2 class="timeline__title">The purpose of your appeal</h2>
+                <div class="radio-button-group">
+                    <input type="radio" id="purpose1" name="purpose" value="option1" />
+                    <label for="purpose1" class="radio-label">
+                        <span>Find out the cost</span>
+                        <img src="images/purpose1.jpg" alt="Option 1" class="radio-image" />
+                    </label>
+
+                    <input type="radio" id="purpose2" name="purpose" value="option2" />
+                    <label for="purpose2" class="radio-label">
+                        <span>Сompare prices</span>
+                        <img src="images/purpose2.jpg" alt="Option 2" class="radio-image" />
+                    </label>
+
+                    <input type="radio" id="purpose3" name="purpose" value="option3" />
+                    <label for="purpose3" class="radio-label">
+                        <span>Find a master</span>
+                        <img src="images/purpose3.jpg" alt="Option 3" class="radio-image" />
+                    </label>
+                </div>
+                <div class="step__buttons">
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="step empty">
+                <h2 class="timeline__title">Your property for renovation</h2>
+                <div class="radio-button-group">
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="property1" name="property" value="option1" />
+                            <label for="property1" class="radio-label">
+                                <span>House</span>
+                                <img src="images/property1.jpg" alt="Option 1" class="radio-image" />
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="property1-input" class="input-label">
+                                <span>Total area</span>
+                                <input type="text" id="property1-input" name="property1-input" value=""
+                                    placeholder="0 m2" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="property2" name="property" value="option2" />
+                            <label for="property2" class="radio-label">
+                                <span>Apartments</span>
+                                <img src="images/property2.jpg" alt="Option 2" class="radio-image" />
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="property2-input" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="property2-input" name="property2-input" value=""
+                                    placeholder="0 rooms" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="step empty">
+                <h2 class="timeline__title">Outputs of planned works</h2>
+                <div class="radio-button-group">
+                    <input type="radio" id="outputs1" name="outputs" value="option1" />
+                    <label for="outputs1" class="radio-label">
+                        <span>Construction works</span>
+                        <img src="images/outputs1.jpg" alt="Option 1" class="radio-image" />
+                    </label>
+
+                    <input type="radio" id="outputs2" name="outputs" value="option2" />
+                    <label for="outputs2" class="radio-label">
+                        <span>Internal work</span>
+                        <img src="images/outputs2.jpg" alt="Option 2" class="radio-image" />
+                    </label>
+                </div>
+                <h3>Internal work</h3>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="internal1" name="internal1" />
+                    <label for="internal1" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal1.jpg" alt="Main Image 1" class="main-image" />
+                        <span>Plaster</span>
+                    </label>
+
+                    <input type="checkbox" id="internal2" name="internal2" />
+                    <label for="internal2" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal2.jpg" alt="Main Image 2" class="main-image" />
+                        <span>Plaster</span>
+                    </label>
+
+                    <input type="checkbox" id="internal3" name="internal3" />
+                    <label for="internal3" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal3.jpg" alt="Main Image 3" class="main-image" />
+                        <span>Plaster</span>
+                    </label>
+
+                    <input type="checkbox" id="internal4" name="internal4" />
+                    <label for="internal4" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal4.jpg" alt="Main Image 4" class="main-image" />
+                        <span>Floor tiles</span>
+                    </label>
+
+                    <input type="checkbox" id="internal5" name="internal5" />
+                    <label for="internal5" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal5.jpg" alt="Main Image 5" class="main-image" />
+                        <span>Floor tiles</span>
+                    </label>
+
+                    <input type="checkbox" id="internal6" name="internal6" />
+                    <label for="internal6" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal6.jpg" alt="Main Image 6" class="main-image" />
+                        <span>Floor tiles</span>
+                    </label>
+
+                    <input type="checkbox" id="internal7" name="internal7" />
+                    <label for="internal7" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal7.jpg" alt="Main Image 7" class="main-image" />
+                        <span>Floor coverings</span>
+                    </label>
+
+                    <input type="checkbox" id="internal8" name="internal8" />
+                    <label for="internal8" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal8.jpg" alt="Main Image 8" class="main-image" />
+                        <span>Floor coverings</span>
+                    </label>
+
+                    <input type="checkbox" id="internal9" name="internal9" />
+                    <label for="internal9" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal9.jpg" alt="Main Image 9" class="main-image" />
+                        <span>Plumbing</span>
+                    </label>
+
+                    <input type="checkbox" id="internal10" name="internal10" />
+                    <label for="internal10" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal10.jpg" alt="Main Image 10" class="main-image" />
+                        <span>Plumbing</span>
+                    </label>
+
+                    <input type="checkbox" id="internal11" name="internal11" />
+                    <label for="internal11" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal11.jpg" alt="Main Image 11" class="main-image" />
+                        <span>Floor coverings</span>
+                    </label>
+
+                    <input type="checkbox" id="internal12" name="internal12" />
+                    <label for="internal12" class="checkbox-label">
+                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                        <img src="images/internal12.jpg" alt="Main Image 12" class="main-image" />
+                        <span>Plumbing</span>
+                    </label>
+                </div>
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="step empty">
+                <h2 class="timeline__title">Choose your rooms</h2>
+                <div class="radio-button-group">
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="room1" name="room" value="option1" />
+                            <label for="room1" class="radio-label">
+                                <span>Kitchen</span>
+                                <img src="images/room1.jpg" alt="Option 1" class="radio-image" />
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="room1-input" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="room1-input" name="room1-input" value="" placeholder="0 rooms" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="room2" name="room" value="option2" />
+                            <label for="room2" class="radio-label">
+                                <span>Bathroom</span>
+                                <img src="images/room2.jpg" alt="Option 2" class="radio-image" />
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="room2-input" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="room2-input" name="room2-input" value="" placeholder="0 rooms" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="room3" name="room" value="option2" />
+                            <label for="room3" class="radio-label">
+                                <span>Livingroom</span>
+                                <img src="images/room3.jpg" alt="Option 3" class="radio-image" />
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="room3-input" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="room3-input" name="room3-input" value="" placeholder="0 rooms" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="room4" name="room" value="option2" />
+                            <label for="room4" class="radio-label">
+                                <span>Bedroom</span>
+                                <img src="images/room4.jpg" alt="Option 4" class="radio-image" />
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="room4-input" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="room4-input" name="room4-input" value="" placeholder="0 rooms" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step__block">
+                        <div class="radio-button-group">
+                            <input type="radio" id="room5" name="room" value="option2" />
+                            <label for="room5" class="radio-label">
+                                <span>Other</span>
+                                <img src="images/room5.jpg" alt="Option 5" class="radio-image" />
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="room5-input" class="input-label">
+                                <span>Number of rooms</span>
+                                <input type="text" id="room5-input" name="room5-input" value="" placeholder="0 rooms" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="step empty">
+                <h2 class="timeline__title">Your renovation</h2>
+                <div class="renovation__block">
+                    <h4 class="renovation__title">What type of offer do you want?</h4>
+                    <div class="renovation__box">
+                        <div class="radio-button-group">
+                            <input type="radio" id="type1" name="type" value="option1" />
+                            <label for="type1" class="radio-label">
+                                <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                                <span>Standart</span>
+                            </label>
+        
+                            <input type="radio" id="type2" name="type" value="option2" />
+                            <label for="type2" class="radio-label">
+                                <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                                <span>Premium</span>
+                            </label>
+        
+                            <input type="radio" id="type3" name="type" value="option3" />
+                            <label for="type3" class="radio-label">
+                                <img src="images/no-select.png" alt="Unchecked" class="checkbox-image" />
+                                <span>Not decided yet</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="renovation__block">
+                    <h4 class="renovation__title">What your budget and dates?</h4>
+                    <div class="renovation__box">
+                        <div class="input-group">
+                            <label for="budget-input" class="input-label w-50">
+                                <span>Your budget for the job</span>
+                                <input type="text" id="budget-input" name="budget-input" value="" placeholder="0 &euro;" />
+                            </label>
+
+                            <label for="date-input" class="input-label w-50">
+                                <span>Start your project date</span>
+                                <input type="text" id="date-input" name="date-input" value="" placeholder="DD/MM/YY"  maxlength="8"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="renovation__block">
+                    <h4 class="renovation__title">What your address?</h4>
+                    <div class="renovation__box">
+                        <div class="input-group">
+                            <label for="address-input" class="input-label w-30">
+                                <span>Address</span>
+                                <input type="text" id="address-input" name="address-input" value=""  />
+                            </label>
+                            <label for="zip-input" class="input-label w-30">
+                                <span>Zip</span>
+                                <input type="text" id="zip-input" name="zip-input" value="" >
+                            </label>
+                            <label for="city-input" class="input-label w-30">
+                                <span>City</span>
+                                <input type="text" id="city-input" name="city-input" value="" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="renovation__block">
+                    <h4 class="renovation__title">Do you have pictures or plans of your property?</h4>
+                    <div class="renovation__box">
+                        <div class="input-group">
+                            <label for="files-input" class="input-label w-100">
+                                <span>Add pictures</span>
+                                <input type="file" id="files-input" name="files-input" multiple />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="renovation__block">
+                    <h4 class="renovation__title">Details and your wishes</h4>
+                    <div class="renovation__box">
+                        <div class="input-group">
+                            <label for="desctiption-input" class="input-label w-100">
+                                <span>Add your description</span>
+                                <input type="text" id="desctiption-input" name="desctiption-input" value="" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step">Next Step</button>
+                </div>
+            </div>
+
+            <div class="step empty">
+                <h2 class="timeline__title">Your contact details</h2>
+                <div class="renovation__block">
+                    <h4 class="renovation__title">Your name and surname</h4>
+                    <div class="renovation__box">
+                        <div class="input-group">
+                            <label for="name-input" class="input-label w-50">
+                                <span>Name</span>
+                                <input type="text" id="name-input" name="name-input" value="" />
+                            </label>
+
+                            <label for="surname-input" class="input-label w-50">
+                                <span>Surname</span>
+                                <input type="text" id="surname-input" name="surname-input" value="" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="renovation__block">
+                    <h4 class="renovation__title">Contact information</h4>
+                    <div class="renovation__box">
+                        <div class="input-group">
+                            <label for="email-input" class="input-label w-50">
+                                <span>E-mail</span>
+                                <input type="email" id="email-input" name="email-input" value="" />
+                            </label>
+
+                            <label for="phone-input" class="input-label w-50">
+                                <span>Phone number</span>
+                                <input type="text" id="phone-input" name="phone-input" value="" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="step__buttons">
+                    <button class="prev-step">Previous Step</button>
+                    <button class="next-step" id="send-project">Send my project</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
