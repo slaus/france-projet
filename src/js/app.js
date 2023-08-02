@@ -219,8 +219,27 @@ document.getElementById('date-input').addEventListener('keyup', function () {
 });
 
 function formatDate(value) {
-  // Remove any non-numeric characters from the input
   value = value.replace(/\D/g, '');
+
+  // Format the day (DD)
+  if (value.length >= 2) {
+    const day = value.slice(0, 2);
+    if (parseInt(day) < 1) {
+      value = '01' + value.slice(2);
+    } else if (parseInt(day) > 31) {
+      value = '31' + value.slice(2);
+    }
+  }
+
+  // Format the month (MM)
+  if (value.length >= 4) {
+    const month = value.slice(2, 4);
+    if (parseInt(month) < 1) {
+      value = value.slice(0, 2) + '01' + value.slice(4);
+    } else if (parseInt(month) > 12) {
+      value = value.slice(0, 2) + '12' + value.slice(4);
+    }
+  }
 
   // Add slashes to format the date (DD/MM/YY)
   if (value.length > 4) {
@@ -233,6 +252,7 @@ function formatDate(value) {
 
   return value;
 }
+
 
 // GALLERY WITH POPUP
 const galleryItems = document.querySelectorAll(".gallery__description-icon");
@@ -411,3 +431,94 @@ document.addEventListener('DOMContentLoaded', () => {
   const submitButton = document.querySelector('.step.empty .next-step');
   submitButton.addEventListener('click', submitFormToServer);
 });
+
+
+
+// SHOW PASSWORD
+const showPassword = document.querySelectorAll(".show-password");
+
+function togglePasswordVisibility(inputId) {
+  const inputElement = document.getElementById(inputId);
+  const showPasswordElement = inputElement.nextElementSibling;
+
+  if (inputElement.type === 'password') {
+    inputElement.type = 'text';
+    // showPasswordElement.src = 'images/eye-closed.svg';
+  } else {
+    inputElement.type = 'password';
+    // showPasswordElement.src = 'images/eye.svg';
+  }
+}
+
+showPassword.forEach(item => {
+  item.addEventListener("click", () => {
+    togglePasswordVisibility("password-input");
+    togglePasswordVisibility("repassword-input");
+  });
+});
+
+
+
+// INPUT BUDGET
+const budgetInput = document.getElementById('budget-input');
+
+budgetInput.addEventListener('input', function (event) {
+  const value = event.target.value;
+
+  const sanitizedValue = value.replace(/[^\d.].*|^(?=\d)\D/g, '');
+
+  if (!/^\d/.test(sanitizedValue)) {
+    event.target.value = '';
+  } else {
+    event.target.value = sanitizedValue;
+  }
+});
+
+
+
+// STEP ACTIVITY
+const allStepDivs = document.querySelectorAll('.step');
+
+allStepDivs.forEach(function (stepDiv) {
+  const radioButtons = stepDiv.querySelectorAll('.radio-button-group input[type="radio"]');
+  const nextStepButton = stepDiv.querySelector('.next-step');
+  const requiredInputs = stepDiv.querySelectorAll('input[required]');
+
+  function checkIfRequiredInputsFilled() {
+    let allInputsFilled = true;
+
+    requiredInputs.forEach(function (input) {
+      if (!input.value.trim()) {
+        allInputsFilled = false;
+        input.classList.add('error');
+      } else {
+        input.classList.remove('error');
+      }
+    });
+
+    nextStepButton.disabled = !allInputsFilled;
+  }
+
+  radioButtons.forEach(function (radioButton) {
+    radioButton.addEventListener('change', checkIfRequiredInputsFilled);
+  });
+
+  requiredInputs.forEach(function (input) {
+    input.addEventListener('input', checkIfRequiredInputsFilled);
+  });
+});
+
+
+
+// REQUIRED INPUT
+const inputLabels = document.querySelectorAll('.input-label');
+
+inputLabels.forEach(function (inputLabel) {
+  const input = inputLabel.querySelector('input[required]');
+
+  if (input) {
+    const span = inputLabel.querySelector('span');
+    span.textContent = span.textContent.trim() + ' *';
+  }
+});
+

@@ -33,7 +33,7 @@
                     </label>
                 </div>
                 <div class="step__buttons">
-                    <button class="next-step">Next Step</button>
+                    <button class="next-step" disabled>Next Step</button>
                 </div>
             </div>
 
@@ -75,7 +75,7 @@
                 </div>
                 <div class="step__buttons">
                     <button class="prev-step">Previous Step</button>
-                    <button class="next-step">Next Step</button>
+                    <button class="next-step" disabled>Next Step</button>
                 </div>
             </div>
 
@@ -182,7 +182,7 @@
                 </div>
                 <div class="step__buttons">
                     <button class="prev-step">Previous Step</button>
-                    <button class="next-step">Next Step</button>
+                    <button class="next-step" disabled>Next Step</button>
                 </div>
             </div>
 
@@ -257,7 +257,12 @@
                                 <img src="images/room5.jpg" alt="Option 5" class="radio-image" />
                             </label>
                         </div>
-                        <div class="input-group">
+                        <div class="input-group column">
+                            <label for="room6-input" class="input-label">
+                                <span>Type of rooms</span>
+                                <input type="text" id="room6-input" name="room6-input" value="" placeholder="type of rooms" />
+                            </label>
+
                             <label for="room5-input" class="input-label">
                                 <span>Number of rooms</span>
                                 <input type="text" id="room5-input" name="room5-input" value="" placeholder="0 rooms" />
@@ -267,7 +272,7 @@
                 </div>
                 <div class="step__buttons">
                     <button class="prev-step">Previous Step</button>
-                    <button class="next-step">Next Step</button>
+                    <button class="next-step" disabled>Next Step</button>
                 </div>
             </div>
 
@@ -303,12 +308,12 @@
                         <div class="input-group">
                             <label for="budget-input" class="input-label w-50">
                                 <span>Your budget for the job</span>
-                                <input type="text" id="budget-input" name="budget-input" value="" placeholder="0 &euro;" />
+                                <input type="text" id="budget-input" name="budget-input" value="" placeholder="0 &euro;" required />
                             </label>
 
                             <label for="date-input" class="input-label w-50">
                                 <span>Start your project date</span>
-                                <input type="text" id="date-input" name="date-input" value="" placeholder="DD/MM/YY"  maxlength="8"/>
+                                <input type="text" id="date-input" name="date-input" value="" placeholder="DD/MM/YY"  maxlength="8" required />
                             </label>
                         </div>
                     </div>
@@ -356,7 +361,7 @@
                 </div>
                 <div class="step__buttons">
                     <button class="prev-step">Previous Step</button>
-                    <button class="next-step">Next Step</button>
+                    <button class="next-step" disabled>Next Step</button>
                 </div>
             </div>
 
@@ -368,12 +373,12 @@
                         <div class="input-group">
                             <label for="name-input" class="input-label w-50">
                                 <span>Name</span>
-                                <input type="text" id="name-input" name="name-input" value="" />
+                                <input type="text" id="name-input" name="name-input" value="" required />
                             </label>
 
                             <label for="surname-input" class="input-label w-50">
                                 <span>Surname</span>
-                                <input type="text" id="surname-input" name="surname-input" value="" />
+                                <input type="text" id="surname-input" name="surname-input" value="" required />
                             </label>
                         </div>
                     </div>
@@ -384,19 +389,37 @@
                         <div class="input-group">
                             <label for="email-input" class="input-label w-50">
                                 <span>E-mail</span>
-                                <input type="email" id="email-input" name="email-input" value="" />
+                                <input type="email" id="email-input" name="email-input" value="" required />
                             </label>
 
                             <label for="phone-input" class="input-label w-50">
                                 <span>Phone number</span>
-                                <input type="text" id="phone-input" name="phone-input" value="" />
+                                <input type="text" id="phone-input" name="phone-input" value="" required />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="renovation__block">
+                    <h4 class="renovation__title">Your password</h4>
+                    <div class="renovation__box">
+                        <div class="input-group">
+                            <label for="password-input" class="input-label input-password w-50">
+                                <span>Password</span>
+                                <input type="password" id="password-input" name="password-input" value="" required/>
+                                <img src="images/eye.svg" alt="eye" class="show-password">
+                            </label>
+
+                            <label for="repassword-input" class="input-label input-password w-50">
+                                <span>Retype password</span>
+                                <input type="password" id="repassword-input" name="repassword-input" value="" required/>
+                                <img src="images/eye.svg" alt="eye" class="show-password">
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="step__buttons">
                     <button class="prev-step">Previous Step</button>
-                    <button class="next-step" id="send-project">Send my project</button>
+                    <button class="last-step" id="send-project">Send my project</button>
                 </div>
             </div>
 

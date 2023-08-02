@@ -82,6 +82,9 @@
         color: $whiteColor;
         transition: all .3s ease;
         z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media screen and (max-width: 991px) {
             max-width: 220px;
