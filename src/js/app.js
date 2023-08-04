@@ -213,6 +213,59 @@ try {
 } catch (e) { }
 
 
+// HIDDEN BLOCKS
+function hiddenBlocks(selector, id, button) {
+  const radioButtons = document.querySelectorAll(selector);
+  const outputsHidden = document.getElementById(id);
+
+  radioButtons.forEach(radioButton => {
+    radioButton.addEventListener("change", () => {
+      if (radioButton.id === button && radioButton.checked) {
+        outputsHidden.classList.add("active");
+      } else {
+        outputsHidden.classList.remove("active");
+      }
+    });
+  });
+}
+
+hiddenBlocks('input[name="outputs"]', "outputs-hidden", "outputs2");
+hiddenBlocks('input[name="room"]', "room-hidden", "room5");
+
+
+
+// Google Maps Places API
+function loadGoogleMapsScript() {
+  const script = document.createElement("script");
+  script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyB0kXLUk5Kkiz2XdjAvaX2O9iDjWTD5eW0&libraries=places`;
+  script.defer = true;
+  script.async = true;
+  document.head.appendChild(script);
+  script.onload = initAutocomplete;
+}
+
+function initAutocomplete() {
+  const addressInput = document.getElementById("address-input");
+
+  const autocomplete = new google.maps.places.Autocomplete(addressInput);
+
+  autocomplete.setTypes(["address"]);
+
+  autocomplete.addListener("place_changed", () => {
+    const place = autocomplete.getPlace();
+    if (!place.geometry || !place.formatted_address) {
+      console.error("Место не выбрано или данные недействительны.");
+      return;
+    }
+
+    console.log("Your address: ", place.formatted_address);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", loadGoogleMapsScript);
+
+
+
 // DATE MASK
 document.getElementById('date-input').addEventListener('keyup', function () {
   this.value = formatDate(this.value);
@@ -496,7 +549,9 @@ allStepDivs.forEach(function (stepDiv) {
       }
     });
 
-    nextStepButton.disabled = !allInputsFilled;
+    if (nextStepButton) {
+      nextStepButton.disabled = !allInputsFilled;
+    }
   }
 
   radioButtons.forEach(function (radioButton) {
@@ -507,6 +562,7 @@ allStepDivs.forEach(function (stepDiv) {
     input.addEventListener('input', checkIfRequiredInputsFilled);
   });
 });
+
 
 
 
