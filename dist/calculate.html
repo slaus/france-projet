@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230804175525">
   <title>Calculate</title>
 </head>
   <body>
@@ -61,19 +61,19 @@
                     <input type="radio" id="purpose1" name="purpose" value="option1">
                     <label for="purpose1" class="radio-label">
                         <span>Find out the cost</span>
-                        <img src="images/purpose1.jpg" alt="Option 1" class="radio-image">
+                        <picture><source srcset="images/purpose1.webp" type="image/webp"><img src="images/purpose1.jpg" alt="Option 1" class="radio-image"></picture>
                     </label>
 
                     <input type="radio" id="purpose2" name="purpose" value="option2">
                     <label for="purpose2" class="radio-label">
                         <span>Сompare prices</span>
-                        <img src="images/purpose2.jpg" alt="Option 2" class="radio-image">
+                        <picture><source srcset="images/purpose2.webp" type="image/webp"><img src="images/purpose2.jpg" alt="Option 2" class="radio-image"></picture>
                     </label>
 
                     <input type="radio" id="purpose3" name="purpose" value="option3">
                     <label for="purpose3" class="radio-label">
                         <span>Find a master</span>
-                        <img src="images/purpose3.jpg" alt="Option 3" class="radio-image">
+                        <picture><source srcset="images/purpose3.webp" type="image/webp"><img src="images/purpose3.jpg" alt="Option 3" class="radio-image"></picture>
                     </label>
                 </div>
                 <div class="step__buttons">
@@ -89,13 +89,7 @@
                             <input type="radio" id="property1" name="property" value="option1">
                             <label for="property1" class="radio-label">
                                 <span>House</span>
-                                <img src="images/property1.jpg" alt="Option 1" class="radio-image">
-                            </label>
-                        </div>
-                        <div class="input-group">
-                            <label for="property1-input" class="input-label">
-                                <span>Total area</span>
-                                <input type="text" id="property1-input" name="property1-input" value="" placeholder="0 m2">
+                                <picture><source srcset="images/property1.webp" type="image/webp"><img src="images/property1.jpg" alt="Option 1" class="radio-image"></picture>
                             </label>
                         </div>
                     </div>
@@ -104,13 +98,7 @@
                             <input type="radio" id="property2" name="property" value="option2">
                             <label for="property2" class="radio-label">
                                 <span>Apartments</span>
-                                <img src="images/property2.jpg" alt="Option 2" class="radio-image">
-                            </label>
-                        </div>
-                        <div class="input-group">
-                            <label for="property2-input" class="input-label">
-                                <span>Number of rooms</span>
-                                <input type="text" id="property2-input" name="property2-input" value="" placeholder="0 rooms">
+                                <picture><source srcset="images/property2.webp" type="image/webp"><img src="images/property2.jpg" alt="Option 2" class="radio-image"></picture>
                             </label>
                         </div>
                     </div>
@@ -127,100 +115,39 @@
                     <input type="radio" id="outputs1" name="outputs" value="option1">
                     <label for="outputs1" class="radio-label">
                         <span>Construction works</span>
-                        <img src="images/outputs1.jpg" alt="Option 1" class="radio-image">
+                        <picture><source srcset="images/outputs1.webp" type="image/webp"><img src="images/outputs1.jpg" alt="Option 1" class="radio-image"></picture>
                     </label>
 
                     <input type="radio" id="outputs2" name="outputs" value="option2">
                     <label for="outputs2" class="radio-label">
                         <span>Internal work</span>
-                        <img src="images/outputs2.jpg" alt="Option 2" class="radio-image">
+                        <picture><source srcset="images/outputs2.webp" type="image/webp"><img src="images/outputs2.jpg" alt="Option 2" class="radio-image"></picture>
                     </label>
                 </div>
-                <h3>Internal work</h3>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="internal1" name="internal1">
-                    <label for="internal1" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal1.jpg" alt="Main Image 1" class="main-image">
-                        <span>Plaster</span>
-                    </label>
+                <div id="outputs-hidden" class="hidden-block">
+                    <h3>Internal work</h3>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="internal1" name="internal1">
+                        <label for="internal1" class="checkbox-label">
+                            <picture><source srcset="images/no-select.webp" type="image/webp"><img src="images/no-select.png" alt="Unchecked" class="checkbox-image"></picture>
+                            <picture><source srcset="images/internal1.webp" type="image/webp"><img src="images/internal1.jpg" alt="Main Image 1" class="main-image"></picture>
+                            <span>Finish the job</span>
+                        </label>
 
-                    <input type="checkbox" id="internal2" name="internal2">
-                    <label for="internal2" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal2.jpg" alt="Main Image 2" class="main-image">
-                        <span>Plaster</span>
-                    </label>
+                        <input type="checkbox" id="internal2" name="internal2">
+                        <label for="internal2" class="checkbox-label">
+                            <picture><source srcset="images/no-select.webp" type="image/webp"><img src="images/no-select.png" alt="Unchecked" class="checkbox-image"></picture>
+                            <picture><source srcset="images/internal4.webp" type="image/webp"><img src="images/internal4.jpg" alt="Main Image 2" class="main-image"></picture>
+                            <span>Floor tiles</span>
+                        </label>
 
-                    <input type="checkbox" id="internal3" name="internal3">
-                    <label for="internal3" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal3.jpg" alt="Main Image 3" class="main-image">
-                        <span>Plaster</span>
-                    </label>
-
-                    <input type="checkbox" id="internal4" name="internal4">
-                    <label for="internal4" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal4.jpg" alt="Main Image 4" class="main-image">
-                        <span>Floor tiles</span>
-                    </label>
-
-                    <input type="checkbox" id="internal5" name="internal5">
-                    <label for="internal5" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal5.jpg" alt="Main Image 5" class="main-image">
-                        <span>Floor tiles</span>
-                    </label>
-
-                    <input type="checkbox" id="internal6" name="internal6">
-                    <label for="internal6" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal6.jpg" alt="Main Image 6" class="main-image">
-                        <span>Floor tiles</span>
-                    </label>
-
-                    <input type="checkbox" id="internal7" name="internal7">
-                    <label for="internal7" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal7.jpg" alt="Main Image 7" class="main-image">
-                        <span>Floor coverings</span>
-                    </label>
-
-                    <input type="checkbox" id="internal8" name="internal8">
-                    <label for="internal8" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal8.jpg" alt="Main Image 8" class="main-image">
-                        <span>Floor coverings</span>
-                    </label>
-
-                    <input type="checkbox" id="internal9" name="internal9">
-                    <label for="internal9" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal9.jpg" alt="Main Image 9" class="main-image">
-                        <span>Plumbing</span>
-                    </label>
-
-                    <input type="checkbox" id="internal10" name="internal10">
-                    <label for="internal10" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal10.jpg" alt="Main Image 10" class="main-image">
-                        <span>Plumbing</span>
-                    </label>
-
-                    <input type="checkbox" id="internal11" name="internal11">
-                    <label for="internal11" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal11.jpg" alt="Main Image 11" class="main-image">
-                        <span>Floor coverings</span>
-                    </label>
-
-                    <input type="checkbox" id="internal12" name="internal12">
-                    <label for="internal12" class="checkbox-label">
-                        <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
-                        <img src="images/internal12.jpg" alt="Main Image 12" class="main-image">
-                        <span>Plumbing</span>
-                    </label>
+                        <input type="checkbox" id="internal3" name="internal3">
+                        <label for="internal3" class="checkbox-label">
+                            <picture><source srcset="images/no-select.webp" type="image/webp"><img src="images/no-select.png" alt="Unchecked" class="checkbox-image"></picture>
+                            <picture><source srcset="images/internal7.webp" type="image/webp"><img src="images/internal7.jpg" alt="Main Image 3" class="main-image"></picture>
+                            <span>Flooring</span>
+                        </label>
+                    </div>
                 </div>
                 <div class="step__buttons">
                     <button class="prev-step">Previous Step</button>
@@ -236,13 +163,7 @@
                             <input type="radio" id="room1" name="room" value="option1">
                             <label for="room1" class="radio-label">
                                 <span>Kitchen</span>
-                                <img src="images/room1.jpg" alt="Option 1" class="radio-image">
-                            </label>
-                        </div>
-                        <div class="input-group">
-                            <label for="room1-input" class="input-label">
-                                <span>Number of rooms</span>
-                                <input type="text" id="room1-input" name="room1-input" value="" placeholder="0 rooms">
+                                <picture><source srcset="images/room1.webp" type="image/webp"><img src="images/room1.jpg" alt="Option 1" class="radio-image"></picture>
                             </label>
                         </div>
                     </div>
@@ -251,13 +172,7 @@
                             <input type="radio" id="room2" name="room" value="option2">
                             <label for="room2" class="radio-label">
                                 <span>Bathroom</span>
-                                <img src="images/room2.jpg" alt="Option 2" class="radio-image">
-                            </label>
-                        </div>
-                        <div class="input-group">
-                            <label for="room2-input" class="input-label">
-                                <span>Number of rooms</span>
-                                <input type="text" id="room2-input" name="room2-input" value="" placeholder="0 rooms">
+                                <picture><source srcset="images/room2.webp" type="image/webp"><img src="images/room2.jpg" alt="Option 2" class="radio-image"></picture>
                             </label>
                         </div>
                     </div>
@@ -266,13 +181,7 @@
                             <input type="radio" id="room3" name="room" value="option2">
                             <label for="room3" class="radio-label">
                                 <span>Livingroom</span>
-                                <img src="images/room3.jpg" alt="Option 3" class="radio-image">
-                            </label>
-                        </div>
-                        <div class="input-group">
-                            <label for="room3-input" class="input-label">
-                                <span>Number of rooms</span>
-                                <input type="text" id="room3-input" name="room3-input" value="" placeholder="0 rooms">
+                                <picture><source srcset="images/room3.webp" type="image/webp"><img src="images/room3.jpg" alt="Option 3" class="radio-image"></picture>
                             </label>
                         </div>
                     </div>
@@ -281,13 +190,7 @@
                             <input type="radio" id="room4" name="room" value="option2">
                             <label for="room4" class="radio-label">
                                 <span>Bedroom</span>
-                                <img src="images/room4.jpg" alt="Option 4" class="radio-image">
-                            </label>
-                        </div>
-                        <div class="input-group">
-                            <label for="room4-input" class="input-label">
-                                <span>Number of rooms</span>
-                                <input type="text" id="room4-input" name="room4-input" value="" placeholder="0 rooms">
+                                <picture><source srcset="images/room4.webp" type="image/webp"><img src="images/room4.jpg" alt="Option 4" class="radio-image"></picture>
                             </label>
                         </div>
                     </div>
@@ -296,20 +199,22 @@
                             <input type="radio" id="room5" name="room" value="option2">
                             <label for="room5" class="radio-label">
                                 <span>Other</span>
-                                <img src="images/room5.jpg" alt="Option 5" class="radio-image">
+                                <picture><source srcset="images/room5.webp" type="image/webp"><img src="images/room5.jpg" alt="Option 5" class="radio-image"></picture>
                             </label>
                         </div>
-                        <div class="input-group column">
-                            <label for="room6-input" class="input-label">
-                                <span>Type of rooms</span>
-                                <input type="text" id="room6-input" name="room6-input" value="" placeholder="type of rooms">
-                            </label>
+                    </div>
+                </div>
+                <div id="room-hidden" class="hidden-block">
+                    <div class="input-group">
+                        <label for="room6-input" class="input-label">
+                            <span>Type of rooms</span>
+                            <input type="text" id="room6-input" name="room6-input" value="" placeholder="type of rooms">
+                        </label>
 
-                            <label for="room5-input" class="input-label">
-                                <span>Number of rooms</span>
-                                <input type="text" id="room5-input" name="room5-input" value="" placeholder="0 rooms">
-                            </label>
-                        </div>
+                        <label for="room5-input" class="input-label">
+                            <span>Number of rooms</span>
+                            <input type="text" id="room5-input" name="room5-input" value="" placeholder="0 rooms">
+                        </label>
                     </div>
                 </div>
                 <div class="step__buttons">
@@ -326,19 +231,19 @@
                         <div class="radio-button-group">
                             <input type="radio" id="type1" name="type" value="option1">
                             <label for="type1" class="radio-label">
-                                <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                                <picture><source srcset="images/no-select.webp" type="image/webp"><img src="images/no-select.png" alt="Unchecked" class="checkbox-image"></picture>
                                 <span>Standart</span>
                             </label>
-        
+
                             <input type="radio" id="type2" name="type" value="option2">
                             <label for="type2" class="radio-label">
-                                <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                                <picture><source srcset="images/no-select.webp" type="image/webp"><img src="images/no-select.png" alt="Unchecked" class="checkbox-image"></picture>
                                 <span>Premium</span>
                             </label>
-        
+
                             <input type="radio" id="type3" name="type" value="option3">
                             <label for="type3" class="radio-label">
-                                <img src="images/no-select.png" alt="Unchecked" class="checkbox-image">
+                                <picture><source srcset="images/no-select.webp" type="image/webp"><img src="images/no-select.png" alt="Unchecked" class="checkbox-image"></picture>
                                 <span>Not decided yet</span>
                             </label>
                         </div>
@@ -364,17 +269,9 @@
                     <h4 class="renovation__title">What your address?</h4>
                     <div class="renovation__box">
                         <div class="input-group">
-                            <label for="address-input" class="input-label w-30">
+                            <label for="address-input" class="input-label w-100">
                                 <span>Address</span>
                                 <input type="text" id="address-input" name="address-input" value="">
-                            </label>
-                            <label for="zip-input" class="input-label w-30">
-                                <span>Zip</span>
-                                <input type="text" id="zip-input" name="zip-input" value="">
-                            </label>
-                            <label for="city-input" class="input-label w-30">
-                                <span>City</span>
-                                <input type="text" id="city-input" name="city-input" value="">
                             </label>
                         </div>
                     </div>
@@ -491,6 +388,6 @@
 </footer>
     </div>
 
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js?_v=20230804175525"></script>
   </body>
 </html>
