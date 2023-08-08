@@ -173,6 +173,7 @@ const mask = (selector) => {
   });
 };
 
+mask('[name="phone-input"]');
 mask('[name="phone"]');
 
 try {
@@ -305,6 +306,56 @@ function formatDate(value) {
 
   return value;
 }
+
+
+// LAST STEP
+const nameInput = document.getElementById("name-input");
+const surnameInput = document.getElementById("surname-input");
+const phoneInput = document.getElementById("phone-input");
+const passwordInput = document.getElementById("password-input");
+const repasswordInput = document.getElementById("repassword-input");
+const sendProjectBtn = document.getElementById("send-project");
+
+function checkPasswordsMatch() {
+  const passwordValue = passwordInput.value.trim();
+  const repasswordValue = repasswordInput.value.trim();
+  return passwordValue === repasswordValue;
+}
+
+function checkRequiredFields() {
+  const requiredFields = [nameInput, surnameInput, phoneInput, passwordInput, repasswordInput];
+  for (const inputField of requiredFields) {
+    if (inputField.hasAttribute("required") && inputField.value.trim() === "") {
+      return false;
+    }
+  }
+  return true;
+}
+
+function isPhoneFieldFilled() {
+  return phoneInput.value.trim() !== 'XXX XXX XXX XX XX';
+}
+
+function updateSendProjectButton() {
+  const passwordsMatch = checkPasswordsMatch();
+  const requiredFieldsFilled = checkRequiredFields();
+  const isPhoneFilled = isPhoneFieldFilled();
+  sendProjectBtn.disabled = !passwordsMatch || !requiredFieldsFilled || !isPhoneFilled;
+}
+
+nameInput.addEventListener("input", updateSendProjectButton);
+surnameInput.addEventListener("input", updateSendProjectButton);
+phoneInput.addEventListener("input", updateSendProjectButton);
+passwordInput.addEventListener("input", updateSendProjectButton);
+repasswordInput.addEventListener("input", updateSendProjectButton);
+
+function handleSendProjectButtonClick() {
+  if (!sendProjectBtn.disabled) {
+    alert("We did it!");
+  }
+}
+
+sendProjectBtn.addEventListener("click", handleSendProjectButtonClick);
 
 
 // GALLERY WITH POPUP

@@ -109,6 +109,10 @@ sup {
   color: inherit;
 }
 
+picture {
+  display: flex
+}
+
 p {
   @media screen and (max-width: 1199px) {
     font-size: 17px;
